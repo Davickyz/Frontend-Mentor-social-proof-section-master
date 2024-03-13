@@ -1,0 +1,174 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
+}
+
+body{
+  padding: 7% 12%;
+  padding-bottom: 1%;
+  background-image: url("images/bg-pattern-top-mobile.svg"), url("images/bg-pattern-bottom-desktop.svg");
+  background-position: left top, 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 500px, 1050px;
+}
+
+.header-and-review{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-and-review .heading{
+  max-width: 360px;
+}
+
+.header-and-review .heading h2{
+  font-size: 40px;
+  font-weight: 900;
+  color: hsl(300, 43%, 22%);
+  margin-bottom: 20px;
+}
+
+.header-and-review .heading p{
+  font-size: 16px;
+  font-weight: 200;
+  color: hsl(303, 10%, 53%);
+}
+
+.header-and-review div.total-rating{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.header-and-review div .star-rating{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 8px;
+  padding: 12px 20px;
+  margin-top: 18px;
+}
+
+.header-and-review .star img{
+  max-width: 14px;
+}
+
+.header-and-review div .star-rating p{
+  color: hsl(300, 43%, 22%);
+  font-weight: 900;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.header-and-review div .star-rating.rating-one{
+  margin-top: 0;
+  padding-right: 40px;
+  transform:translateX(-40%)
+}
+
+.header-and-review div .star-rating.rating-two{
+  transform:translateX(-20%)
+}
+
+.header-and-review div .star-rating.rating-three{
+  padding-right: 40px;
+}
+
+.remarks{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.remark-card{
+  max-width: 260px;
+  background-color: hsl(300, 43%, 22%);
+  color: hsl(0, 0%, 100%);
+  padding: 30px 20px;
+  border-radius: 8px;
+}
+
+.profile{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.profile div img{
+  width: 40px;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+
+.profile div p.user-status{
+  color: hsl(333, 80%, 67%);
+}
+
+.card-two{
+  transform: translateY(10%);
+}
+
+.card-three{
+  transform: translateY(20%);
+}
+
+@media (max-width: 500px) {
+  body{
+    background-image: url("images/bg-pattern-top-mobile.svg"), url("images/bg-pattern-bottom-mobile.svg");
+    background-size: 500px, 500px;
+  }
+
+  .header-and-review{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-and-review .heading{
+    text-align: center;
+  }
+
+  .header-and-review div.total-rating{
+    margin-top: 40px;
+  }
+
+  .header-and-review div .star-rating{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-and-review div .star-rating.rating-one,
+  .header-and-review div .star-rating.rating-two{
+    transform:translateX(0)
+  }
+
+  .remarks{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .remark-card{
+    margin-top: 20px;
+  }
+
+  .card-two,
+  .card-three{
+    transform: translateY(0);
+  }
+}
+
+
+
+.attribution {
+  margin-top: 90px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
